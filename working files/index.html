@@ -8,6 +8,120 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── NAV: sticky so it never overlaps page content ───────────────── */
+    #main-nav {
+      position: sticky !important;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* ── HERO BUTTONS: always visible, wrap on narrow screens ────────── */
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+      align-items: center;
+      margin-top: 32px;
+    }
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    @media (max-width: 420px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .hero-actions .btn-primary,
+      .hero-actions .btn-secondary {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
+
+    /* ── WELCOME section spacing ─────────────────────────────────────── */
+    #welcome {
+      padding-top: 72px;
+      padding-bottom: 80px;
+    }
+    .welcome-layout {
+      gap: 48px;
+    }
+    .welcome-body + .welcome-body {
+      margin-top: 16px;
+    }
+    .welcome-sig {
+      margin-top: 24px;
+    }
+
+    /* ── ABOUT section spacing ───────────────────────────────────────── */
+    #about {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    .about-body + .about-body {
+      margin-top: 14px;
+    }
+    .about-layout {
+      gap: 48px;
+    }
+
+    /* ── MISSION section spacing ─────────────────────────────────────── */
+    #mission {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    .mission-block + .mission-block {
+      margin-top: 40px;
+    }
+    .mission-body + .mission-body {
+      margin-top: 12px;
+    }
+
+    /* ── TEAM section spacing ────────────────────────────────────────── */
+    #team {
+      padding-top: 0;
+    }
+    .team-grid {
+      gap: 40px;
+    }
+    .team-bio-text + .team-bio-text {
+      margin-top: 12px;
+    }
+
+    /* ── EXPERIENCES section spacing ─────────────────────────────────── */
+    #experiences {
+      padding-top: 64px;
+      padding-bottom: 48px;
+    }
+    .exp-layout {
+      gap: 48px;
+    }
+    .exp-type-label {
+      margin-top: 24px;
+    }
+
+    /* ── BOOKING / CONTACT section spacing ───────────────────────────── */
+    #booking {
+      padding-top: 64px;
+      padding-bottom: 72px;
+    }
+    .booking-layout {
+      gap: 48px;
+    }
+    .contact-card + .contact-card {
+      margin-top: 12px;
+    }
+
+    /* ── FOOTER: remove accidental top gap ───────────────────────────── */
+    footer {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -153,7 +267,7 @@
   </div>
   <div class="footer-bottom">
     <p>&copy; 2026 Tataaza Okavango Adventures. All rights reserved.</p>
-    <p>Made in Botswana</p>
+    <p>Made with <span>♥</span> in Botswana</p>
   </div>
 </footer>
 

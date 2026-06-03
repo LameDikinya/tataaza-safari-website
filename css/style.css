@@ -253,6 +253,7 @@ nav {
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
+  background: var(--bark);
 }
 
 .hero-bg {
@@ -276,18 +277,7 @@ nav {
 
 /* Wildlife silhouette strip at hero bottom */
 .hero-silhouette {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 140px;
-  z-index: 2;
-  pointer-events: none;
-}
-.hero-silhouette img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  filter: brightness(0) invert(0); /* keep dark */
+  display: none;
 }
 
 .hero-content {
@@ -772,6 +762,177 @@ nav {
   letter-spacing: 0.08em;
   color: var(--cream);
   line-height: 1.4;
+}
+
+/* Signature Experience Media */
+.sig-hero-img {
+  position: relative;
+  margin-top: 28px;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 220px;
+}
+.sig-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.sig-hero-img:hover img { transform: scale(1.04); }
+.sig-hero-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  background: var(--gold);
+  color: var(--brown);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.sig-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+.sig-img-cell {
+  position: relative;
+  height: 150px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.sig-img-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.sig-img-cell:hover img { transform: scale(1.06); }
+.sig-img-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(30,14,2,0.82) 0%, transparent 100%);
+  padding: 18px 10px 8px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-align: left;
+}
+
+.sig-video-wrap {
+  margin-top: 8px;
+}
+.sig-video-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+  text-align: left;
+}
+.sig-video-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: inline-block;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+.sig-videos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.sig-vid {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 3px;
+  background: var(--brown);
+  display: block;
+}
+.sig-vid:focus { outline: 2px solid var(--gold); }
+
+/* Accommodation block */
+.sig-accom {
+  margin-top: 8px;
+  text-align: left;
+}
+.sig-accom-title {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--brown);
+  margin: 8px 0 12px;
+  line-height: 1;
+}
+.sig-accom-title .accent { color: var(--gold); }
+.sig-accom-body {
+  font-size: 12.5px;
+  line-height: 1.85;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.sig-accom-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 8px;
+  height: 300px;
+}
+.sig-accom-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+.sig-accom-cell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  height: 100%;
+}
+.sig-accom-main { border-radius: 3px; }
+.sig-accom-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.sig-accom-cell:hover img { transform: scale(1.05); }
+.sig-accom-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(30,14,2,0.85) 0%, transparent 100%);
+  padding: 22px 12px 10px;
+}
+.sig-accom-tag {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 3px;
+}
+.sig-accom-caption {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
 }
 
 .exp-destinations-bar {
@@ -1588,4 +1749,25 @@ footer {
   .join-left, .join-right { min-height: 340px; }
   .mission-layout { grid-template-columns: 1fr; }
   .welcome-photo-strip { height: 300px; }
+  .sig-hero-img { height: 180px; }
+  .sig-img-cell { height: 120px; }
+}
+
+.exp-accom-section{
+    background: var(--cream-warm);
+    width: 100%;
+}
+
+.exp-accom-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+@media (max-width:900px){
+    .exp-accom-layout{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
 }

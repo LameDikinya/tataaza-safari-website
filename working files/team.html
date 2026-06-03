@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team | Tataaza Okavango Adventures</title>
+  <meta name="description" content="Meet the founders of Tataaza Okavango Adventures — Mr. Motswai Motswai and Nametso Jael Nketso.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── NAV: sticky so it never overlaps page content ───────────────── */
+    #main-nav {
+      position: sticky !important;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* ── HERO BUTTONS: always visible, wrap on narrow screens ────────── */
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+      align-items: center;
+      margin-top: 32px;
+    }
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    @media (max-width: 420px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .hero-actions .btn-primary,
+      .hero-actions .btn-secondary {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
+
+    /* ── WELCOME section spacing ─────────────────────────────────────── */
+    #welcome {
+      padding-top: 72px;
+      padding-bottom: 80px;
+    }
+    .welcome-layout {
+      gap: 48px;
+    }
+    .welcome-body + .welcome-body {
+      margin-top: 16px;
+    }
+    .welcome-sig {
+      margin-top: 24px;
+    }
+
+    /* ── ABOUT section spacing ───────────────────────────────────────── */
+    #about {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    .about-body + .about-body {
+      margin-top: 14px;
+    }
+    .about-layout {
+      gap: 48px;
+    }
+
+    /* ── MISSION section spacing ─────────────────────────────────────── */
+    #mission {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    .mission-block + .mission-block {
+      margin-top: 40px;
+    }
+    .mission-body + .mission-body {
+      margin-top: 12px;
+    }
+
+    /* ── TEAM section spacing ────────────────────────────────────────── */
+    #team {
+      padding-top: 0;
+    }
+    .team-grid {
+      gap: 40px;
+    }
+    .team-bio-text + .team-bio-text {
+      margin-top: 12px;
+    }
+
+    /* ── EXPERIENCES section spacing ─────────────────────────────────── */
+    #experiences {
+      padding-top: 64px;
+      padding-bottom: 48px;
+    }
+    .exp-layout {
+      gap: 48px;
+    }
+    .exp-type-label {
+      margin-top: 24px;
+    }
+
+    /* ── BOOKING / CONTACT section spacing ───────────────────────────── */
+    #booking {
+      padding-top: 64px;
+      padding-bottom: 72px;
+    }
+    .booking-layout {
+      gap: 48px;
+    }
+    .contact-card + .contact-card {
+      margin-top: 12px;
+    }
+
+    /* ── FOOTER: remove accidental top gap ───────────────────────────── */
+    footer {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="images/01_logo.png" alt="Tataaza Okavango Adventures Logo">
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="experiences.html">Experiences</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MEET OUR TEAM -->
+<section id="team">
+  <div class="team-hero-bg" style="background-image: url('images/13_waterfront_landscape.jpg');"></div>
+  <div class="team-inner">
+    <div class="team-logo-top reveal">
+      <img src="images/01_logo.png" alt="Tataaza Logo">
+    </div>
+    <h2 class="team-headline reveal reveal-delay-1">MEET OUR TEAM</h2>
+    <div class="team-grid">
+
+      <!-- Motswai Motswai -->
+      <div class="team-card reveal reveal-delay-2">
+        <img class="team-photo" src="images/14_portrait_motswai.jpg" alt="Motswai Motswai">
+        <div class="team-name-bar">MOTSWAI MOTSWAI</div>
+        <div class="team-card-body">
+          <div class="team-bio-col">
+            <div class="team-bio-name">Mr. Motswai Motswai</div>
+            <div class="team-bio-role">Founder &amp; Director – Tataaza Okavango Adventures</div>
+            <p class="team-bio-text">
+              Mr. Motswai Motswai is an experienced tourism professional and entrepreneur born in Gonotshoga and raised in Maun, Botswana's tourism hub. His career began at Desert &amp; Delta Safaris (1982–1984) as a waiter, where he developed a strong foundation in customer service.
+            </p>
+          </div>
+          <div class="team-bio-col">
+            <p class="team-bio-text">
+              He later worked in sales at BIG (1985–1990), gaining valuable business and client relations experience. From 1990 to 2006, he served as an Operations Manager at Engine, where he built extensive expertise in operations, leadership, and service delivery.
+            </p>
+            <p class="team-bio-text" style="margin-top:12px;">
+              Since 2006, Mr. Motswai has been an entrepreneur, culminating in the establishment of Tataaza Okavango Adventures. With decades of experience, he is committed to delivering authentic, high-quality travel experiences while promoting Botswana as a premier safari destination.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nametso Jael Nketso -->
+      <div class="team-card reveal reveal-delay-3">
+        <img class="team-photo" src="images/15_portrait_nametso.jpg" alt="Nametso Jael Nketso">
+        <div class="team-name-bar">NAMETSO JAEL NKETSO</div>
+        <div class="team-card-body">
+          <div class="team-bio-col">
+            <div class="team-bio-name">Nametso Jael Nketso</div>
+            <div class="team-bio-role">Co-Founder &amp; Partner – Tataaza Okavango Adventures</div>
+            <p class="team-bio-text">
+              Nametso Jael Nketso is a dynamic professional with a strong background in customer service, administration, and tourism management. She began her career at Absa (2007–2020), where she built extensive experience in customer relations, service excellence, and client engagement.
+            </p>
+          </div>
+          <div class="team-bio-col">
+            <p class="team-bio-text">
+              In 2022, she served as a Legal Secretary at Dingake Law Partners, gaining valuable administrative and organizational expertise. She later transitioned into the tourism sector as General Manager at Honey Guide Adventures Trust (2022–2023), where she played a key role in operations management and delivering exceptional travel experiences.
+            </p>
+            <p class="team-bio-text" style="margin-top:12px;">
+              Since 2023, Nametso has been an entrepreneur and co-founder of Tataaza Okavango Adventures, where she brings her diverse experience, leadership, and passion for service to help drive the company's growth and commitment to excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="team-silhouette-bar"></div>
+  <div class="team-footer-url">www.tataazasafari.africa</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <img src="images/01_logo.png" class="footer-logo" alt="Tataaza Logo">
+      <p class="footer-brand-desc">Crafting Luxury in the Wild. Botswana's premier mobile safari company — where every journey becomes a life-changing adventure.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/26776516706" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.56 4.19 1.62 6.01L0 24l6.18-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.22-3.48-8.52z"/></svg></a>
+        <a href="mailto:tataazamobilesafaris@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Experiences</div>
+      <ul class="footer-links">
+        <li><a href="booking.html">Mobile Safaris</a></li>
+        <li><a href="booking.html">Mokoro Excursions</a></li>
+        <li><a href="booking.html">Boat Cruises</a></li>
+        <li><a href="booking.html">Luxury Packages</a></li>
+        <li><a href="booking.html">Day Game Drives</a></li>
+        <li><a href="booking.html">Quad Biking</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-contact-item"><span>Phone / WhatsApp</span><a href="tel:+26776516706">+267 76 516 706</a></div>
+      <div class="footer-contact-item"><span>Email</span><a href="mailto:tataazamobilesafaris@gmail.com">tataazamobilesafaris@gmail.com</a></div>
+      <div class="footer-contact-item"><span>Address</span><span>P.O. Box 20847, Maun, Botswana</span></div>
+      <div class="footer-contact-item"><span>Website</span><a href="https://www.tataazasafari.africa" target="_blank" rel="noopener">www.tataazasafari.africa</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Tataaza Okavango Adventures. All rights reserved.</p>
+    <p>Made with <span>♥</span> in Botswana</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/26776516706?text=Hello%20Tataaza!%20I'd%20like%20to%20enquire%20about%20a%20safari." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.56 4.19 1.62 6.01L0 24l6.18-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.66-.5-5.23-1.44l-.37-.22-3.87 1.01 1.04-3.76-.24-.39A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.94 9.94 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.67.15-.77.97-.94 1.17-.35.22-.64.07a8.12 8.12 0 0 1-2.39-1.47 8.95 8.95 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.34.44-.51.15-.17.2-.3.3-.5s.05-.37-.02-.52c-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.19-.57-.34z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
