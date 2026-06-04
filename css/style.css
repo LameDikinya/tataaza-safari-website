@@ -1746,6 +1746,7 @@ footer {
   .exp-photo-row { grid-template-columns: 1fr 1fr; height: auto; }
   .exp-photo-cell { height: 160px; }
   .hero-footer-bar { flex-direction: column; gap: 4px; text-align: center; }
+  .hero-content { padding-bottom: 180px; }
   .join-left, .join-right { min-height: 340px; }
   .mission-layout { grid-template-columns: 1fr; }
   .welcome-photo-strip { height: 300px; }
