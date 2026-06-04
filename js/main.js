@@ -34,8 +34,8 @@ function submitBooking() {
   var lname   = document.getElementById('f-lname').value.trim();
   var email   = document.getElementById('f-email').value.trim();
   var phone   = document.getElementById('f-phone').value.trim();
-  var date    = document.getElementById('f-date').value;
-  var guests  = document.getElementById('f-guests').value;
+  var date    = document.getElementById('f-date')   ? document.getElementById('f-date').value   : '';
+  var guests  = document.getElementById('f-guests') ? document.getElementById('f-guests').value : '';
   var type    = document.getElementById('f-type').value;
   var message = document.getElementById('f-message').value.trim();
 
