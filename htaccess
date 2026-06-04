@@ -1,0 +1,7 @@
+Options -MultiViews
+RewriteEngine On
+
+# Serve .html files when clean URL is requested
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
