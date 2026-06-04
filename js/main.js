@@ -2,6 +2,18 @@
    TATAAZA OKAVANGO ADVENTURES — Main JavaScript
    ==================================================== */
 
+// ─── CLEAN URLs (local: .html links work; online: strips .html for clean URLs) ───
+if (location.protocol !== 'file:') {
+  document.querySelectorAll('a[href$=".html"]').forEach(function (a) {
+    try {
+      var url = new URL(a.href);
+      if (url.origin === location.origin) {
+        a.href = url.pathname.replace(/\.html$/, '');
+      }
+    } catch (e) {}
+  });
+}
+
 // ─── NAV HAMBURGER ───
 document.getElementById('hamburger').addEventListener('click', function () {
   document.getElementById('main-nav').classList.toggle('open');
