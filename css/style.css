@@ -347,6 +347,70 @@ nav {
 }
 .hero-footer-bar span { opacity: 0.5; }
 
+/* ====================================================
+   WILDLIFE MOMENT — Baboon feature in Welcome section
+   ==================================================== */
+.wildlife-moment {
+  margin-top: 32px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(59,31,10,0.22);
+  max-width: 100%;
+}
+
+.wildlife-moment-img-wrap {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.wildlife-moment-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+.wildlife-moment:hover .wildlife-moment-img-wrap img {
+  transform: scale(1.04);
+}
+
+.wildlife-moment-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--gold);
+  color: var(--brown);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.wildlife-moment-caption {
+  background: var(--brown);
+  color: rgba(250,240,220,0.88);
+  padding: 16px 20px;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.65;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.wildlife-moment-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
 /* ─────────────────────────────────────────
    WELCOME / ABOUT
 ───────────────────────────────────────── */
@@ -402,6 +466,13 @@ nav {
   text-transform: uppercase;
   color: var(--gold);
   margin-top: 4px;
+}
+
+/* Right column: photo strip stacked above wildlife moment */
+.welcome-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Right: sliced vertical photo strip like PDF page 2 */
