@@ -2334,3 +2334,318 @@ footer {
   .packages-grid { grid-template-columns: 1fr; }
   .pkg-card--featured { max-width: none; }
 }
+
+/* ====================================================
+   SIGNATURE PACKAGE — 10-DAY BOTSWANA CLASSIC
+   ==================================================== */
+.pkg-badge--signature {
+  background: var(--gold);
+  color: var(--brown);
+  font-size: 10px;
+}
+
+.pkg-card--signature {
+  background: var(--brown);
+  border-color: var(--brown);
+  color: var(--cream);
+  grid-column: 1 / -1;
+  padding: 40px 36px 32px;
+  gap: 28px;
+}
+
+.pkg-card--signature .pkg-name,
+.pkg-card--signature .pkg-tagline,
+.pkg-card--signature .pkg-day,
+.pkg-card--signature .pkg-includes li,
+.pkg-card--signature .pkg-excl { color: rgba(250,240,220,0.9); }
+.pkg-card--signature .pkg-includes li::before { color: var(--gold); }
+.pkg-card--signature .pkg-excl { color: rgba(250,240,220,0.5); }
+.pkg-card--signature .pkg-note { background: rgba(240,165,0,0.13); border-color: rgba(240,165,0,0.4); color: var(--gold); }
+
+.pkg-route {
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.85;
+}
+
+.pkg-sig-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.pkg-sig-price-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.pkg-sig-price-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(250,240,220,0.55);
+}
+
+.pkg-sig-price {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.pkg-sig-total {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(250,240,220,0.7);
+}
+
+.pkg-sig-sup {
+  font-size: 11px;
+  color: rgba(250,240,220,0.45);
+  letter-spacing: 0.04em;
+}
+
+.pkg-sig-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  border-top: 1px solid rgba(250,240,220,0.12);
+  padding-top: 28px;
+}
+
+.pkg-sig-col { display: flex; flex-direction: column; gap: 0; }
+
+.pkg-sig-section-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pkg-sig-section-label::before {
+  content: '';
+  display: block;
+  width: 20px; height: 1px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.pkg-itinerary--sig {
+  background: rgba(250,240,220,0.06);
+  gap: 10px;
+}
+.pkg-itinerary--sig .pkg-day { font-size: 12.5px; line-height: 1.6; }
+.pkg-itinerary--sig .pkg-day em { color: rgba(250,240,220,0.55); font-style: italic; }
+
+.pkg-ecosystems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.pkg-ecosystems--light .pkg-eco strong { color: var(--brown); }
+.pkg-ecosystems--light .pkg-eco { color: var(--text-dark); }
+
+.pkg-eco {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(250,240,220,0.85);
+}
+
+.pkg-eco-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: rgba(240,165,0,0.2);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.pkg-eco-num--gold {
+  background: var(--gold-pale);
+  color: var(--brown);
+}
+
+.pkg-note--promo {
+  background: rgba(240,165,0,0.08);
+  border-color: rgba(240,165,0,0.25);
+  color: rgba(250,240,220,0.75);
+}
+.pkg-card--pans .pkg-note--promo,
+.pkg-card--pans-why .pkg-note--promo {
+  color: var(--brown-mid);
+}
+
+.pkg-sig-footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(250,240,220,0.12);
+  padding-top: 24px;
+}
+
+.pkg-sig-best-for {
+  margin-left: auto;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: rgba(250,240,220,0.5);
+}
+.pkg-sig-best-for strong { color: rgba(250,240,220,0.75); font-weight: 700; }
+
+@media (max-width: 900px) {
+  .pkg-sig-header { flex-direction: column; }
+  .pkg-sig-price-block { align-items: flex-start; }
+  .pkg-sig-body { grid-template-columns: 1fr; }
+  .pkg-sig-footer { gap: 10px; }
+  .pkg-sig-best-for { margin-left: 0; }
+}
+
+/* ====================================================
+   MAKGADIKGADI PANS PACKAGE
+   ==================================================== */
+.packages-grid--two {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .packages-grid--two { grid-template-columns: 1fr; }
+}
+
+.pkg-badge--night {
+  background: #1a1a2e;
+  color: #c8b8ff;
+  border: 1px solid rgba(200,184,255,0.25);
+}
+
+.pkg-card--pans {
+  background: var(--brown);
+  border-color: var(--brown);
+  color: var(--cream);
+}
+.pkg-card--pans .pkg-name,
+.pkg-card--pans .pkg-tagline,
+.pkg-card--pans .pkg-day { color: rgba(250,240,220,0.9); }
+.pkg-card--pans .pkg-includes li { color: rgba(250,240,220,0.85); }
+.pkg-card--pans .pkg-includes li::before { color: var(--gold); }
+.pkg-card--pans .pkg-excl { color: rgba(250,240,220,0.45); }
+.pkg-card--pans .pkg-price { color: var(--gold); }
+.pkg-card--pans .pkg-discount { background: rgba(240,165,0,0.2); color: var(--gold); }
+.pkg-card--pans .pkg-note { background: rgba(240,165,0,0.13); border-color: rgba(240,165,0,0.35); color: var(--gold); }
+
+.pkg-route-inline {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(240,165,0,0.75);
+}
+
+.pkg-card--pans-why {
+  background: var(--cream-warm);
+  border-color: var(--cream-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.pkg-card--pans-why .pkg-sig-section-label { color: var(--brown-mid); }
+.pkg-card--pans-why .pkg-sig-section-label::before { background: var(--brown-mid); }
+
+.pkg-pans-seasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.pkg-season {
+  background: #fff;
+  border-radius: 6px;
+  padding: 14px;
+  border-left: 3px solid var(--gold-dark);
+}
+.pkg-season--wet {
+  border-left-color: #185FA5;
+}
+
+.pkg-season-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brown);
+  margin-bottom: 6px;
+}
+
+.pkg-season-desc {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+/* ====================================================
+   PANS CARD — HERO IMAGE
+   ==================================================== */
+.pkg-pans-hero {
+  margin: -32px -28px 24px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 7;
+}
+
+.pkg-pans-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.pkg-card--pans:hover .pkg-pans-hero img {
+  transform: scale(1.04);
+}
+
+.pkg-pans-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10,5,0,0.05) 0%,
+    rgba(30,14,2,0.55) 100%
+  );
+  pointer-events: none;
+}
+
+.pkg-pans-hero-caption {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(250,240,220,0.65);
+  z-index: 2;
+}
